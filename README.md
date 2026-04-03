@@ -1,16 +1,69 @@
-# React + Vite
+# 💰 Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive finance dashboard built using React and Material UI.
+This project focuses on UI design, data handling, and user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Preview
 
-## React Compiler
+[🔗 View Live Dashboard](https://financedashboard-kappa.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 📊 Dashboard overview with balance, income, and expenses
+* 📈 Charts (line, bar, pie, area) for financial insights
+* 🧾 Transactions table with search, filter, and sorting
+* 🔄 Role-based UI (Admin / Viewer)
+* ✏️ Admin can add, edit, and delete transactions
+* 👁 Viewer can only view data (read-only)
+* 📤 Export transactions as CSV
+* 👤 Multiple clients with different data
+* 🌙 Dark mode support
+* 📱 Fully responsive design
+
+---
+
+## 🧠 How It Works
+
+* Data is stored locally (no backend used)
+* Mock data is used for transactions and users
+* Switching user updates dashboard data
+* Role switch changes permissions (Admin / Viewer)
+
+---
+
+## 🛠 Tech Stack
+
+* React (Vite)
+* Material UI (MUI)
+* Recharts
+* CSS (custom styling + responsive)
+
+---
+
+## 📂 Main Sections
+
+* Landing Page (MainPage)
+* Client Dashboard (User view)
+* Admin Dashboard (Manage users)
+* Header (role switch + theme)
+* Footer
+
+---
+
+## ⚠️ Note
+
+* This is a frontend-only project
+* No real financial data is used
+* All data is stored in browser (local/mock)
+
+---
+
+## 👨‍💻 Author
+
+Sankalp Hardiya
+Finance Dashboard UI Assignment
+
