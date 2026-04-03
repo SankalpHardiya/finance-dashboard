@@ -1,0 +1,124 @@
+.header-toolbar {
+  min-height: 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(127, 127, 127, 0.22);
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.role-chip {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .brand-copy {
+    display: none;
+  }
+}
+/* ================= HEADER RESPONSIVE FIX ================= */
+
+/* 📱 MOBILE */
+@media (max-width: 640px) {
+
+  .header-toolbar {
+    min-height: 60px;
+    gap: 10px;
+  }
+
+  .header-brand {
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+
+  /* already hiding text — good */
+  .brand-copy {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  /* buttons tighter */
+  .header-actions button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  /* chip smaller */
+  .role-chip {
+    font-size: 11px;
+    height: 22px;
+  }
+}
+
+
+/* 📲 TABLET */
+@media (max-width: 900px) {
+
+  .header-toolbar {
+    gap: 12px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+}
+
+
+/* 💻 SMALL LAPTOP */
+@media (max-width: 1200px) {
+
+  .header-toolbar {
+    min-height: 64px;
+  }
+}
+
+
+/* 🔥 EXTRA FIXES */
+
+/* prevent overflow issues */
+.header-actions > * {
+  flex-shrink: 0;
+}
+
+/* keep header aligned */
+.header-toolbar {
+  align-items: center;
+}

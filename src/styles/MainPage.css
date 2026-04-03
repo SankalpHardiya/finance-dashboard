@@ -1,0 +1,96 @@
+.main-page {
+  padding: 32px 0 56px;
+}
+
+.hero-panel {
+  margin-top: 8px;
+}
+
+.section-block {
+  margin-top: 40px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+}
+
+.feature-grid {
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .main-page {
+    padding-top: 20px;
+  }
+}
+/* ================= MAIN PAGE RESPONSIVE FIX ================= */
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+
+  .main-page {
+    padding: 20px 0 32px;
+  }
+
+  .hero-panel {
+    margin-top: 0;
+    padding: 16px !important;
+  }
+
+  .section-block {
+    margin-top: 28px;
+  }
+
+  .section-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .feature-grid {
+    margin-top: 4px;
+  }
+
+  /* reduce card spacing */
+  .feature-grid .MuiGrid-item {
+    padding-top: 8px;
+  }
+}
+
+
+/* 📲 TABLET */
+@media (max-width: 900px) {
+
+  .main-page {
+    padding: 24px 0 40px;
+  }
+
+  .section-block {
+    margin-top: 32px;
+  }
+
+  .feature-grid {
+    gap: 12px;
+  }
+}
+
+
+/* 💻 SMALL LAPTOP */
+@media (max-width: 1200px) {
+
+  .main-page {
+    padding: 28px 0 48px;
+  }
+}
+
+
+/* 🔥 EXTRA POLISH */
+
+/* ensure hero doesn’t feel cramped */
+.hero-panel .MuiTypography-root {
+  line-height: 1.5;
+}
+
+/* prevent overflow */
+.main-page * {
+  max-width: 100%;
+}
